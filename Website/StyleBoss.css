@@ -17,155 +17,365 @@
     src: url(../Website/Fonts/Chapaza.ttf);
   }
 
-  #myVideo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    
+  @font-face {
+    font-family: CodeBold;
+    src: url(../Website/Fonts/CODE\ Bold.otf);
   }
+
+  @font-face {
+    font-family: CodeLight;
+    src: url(../Website/Fonts/CODE\ Light.otf);
+  }
+
+
+  #video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  #subVideo {
+    
+    width: 70%;
   
+    z-index: 3;
+  }
+
+  #videoMobile {
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    opacity: 0;
+  }
+
+  #subVideo2 {
+    height: 100%;
+    z-index: 3;
+  }
+
+  .textAnimation {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .textAnimation2 {
+    display: flex;
+    flex-direction: row;
+    gap:30%;
+  }
+
+  .video-container video {
+    position: relative;
+    bottom: 20%;
+    left: 13%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-container2 video {
+    position: relative;
+    bottom: 30%;
+    right:20%;
+    width: 250%;
+   
+  }
+
+div.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-items: center;
+  align-content: center;
+}
+
+.fillObject {
+  opacity: 0;
+  width: 20px;
+  height: auto;
+}
+
+.subPage1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0% 0%;
+  position: relative;
+  left: 8%;
+  width: 90%;
+  margin-top: 18%;
+}
+
+.subPage2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0% 0%;
+  position: relative;
+  left: 8%;
+  width: 90%;
+  margin-top: 10%;
+}
+
+.subPage3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0% 0%;
+  position: relative;
+  left: 8%;
+  width: 90%;
+  margin-top: 13%;
+  margin-bottom: 20%;
+}
+
+.header3 {
+  font-family: CocoExtraBold;
+  color:white;
+  line-height: 90%;
+  font-size: 6em;
+  z-index: 2;
+  width: fit-content;
+  border-style:none;
+}
+
+.frontPage {
+  display: flex;
+  flex-direction: column;
+  gap: 20% 10%;
+  position: relative;
+  left: 8%;
+  top:30%;
+  width: 90%;
+  margin-top: 13%;
+}
   
-  
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*align-items: flex-start;
+  align-content: flex-start;
+  */
+}
+
+.specs {
+  font-family: CodeBold;
+  line-height: 220%;
+  margin: 0%;
+}
+
+.specsWords {
+  line-height: 220%;
+}
+
+.specsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  line-height: 20%;
+}
+
+
+
 h3 {
 font-family: Chapaza;
+font-weight: normal;
 color: white;
 font-size: 2.5em;
 text-align: center;
 margin-top: 1%;
 margin-bottom: 0%;
-position:absolute;
-top:0%;
-left:48%;
-z-index: 2;
+z-index: 4;
 }
 
 
 
 .title {
   max-height: 18%;
-  position: absolute;
-  top:35%;
-  left: 7%;
+ 
   z-index: 2;
 }
 
 .acc  {
+
+  z-index: 4;
+  position: relative;
+  right: 2%;
+
+}
+
+.accImage  {
   height: 40px;
-  z-index: 2;
-  
-position: absolute;
-right: 2%;
-top: 2%;
+
 }
 h2 {
 font-family: CocoBold;
 color:white;
 font-size: 2.4em;
-position: absolute;
-top:43%;
-left: 7%;
+width: fit-content;
+width: -moz-fit-content;
 z-index: 2;
+margin: 0%;
+margin-bottom: 8%;
+position: relative;
+top: 10%;
+
 }
 
-h1 {
+.header1 {
 font-family: CocoExtraBold;
 color:white;
-position: absolute;
-top:25%;
-left: 7%;
-line-height: 90%;
+width: fit-content;
+width: -moz-fit-content;
 font-size: 8em;
 z-index: 2;
+border-style:none;
+border: none;
+margin: 0%;
+line-height: 120%;
 }
 
-.gradient {
+#gradient {
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.664) 0%, rgba(255, 255, 255, 0) 100%);
   position: absolute;
   top: 0%;
   left: 0%;
-  width: 1920px;
-  height: 1080px;
+  width: 100%;
+  height: 61em;
   z-index: 1;
+  transition: 1s;
 }
-h1.header2 {
+
+.header4 {
   font-family: CocoExtraBold;
   color:white;
-  position: absolute;
-  top:103%;
-  left: 7%;
   line-height: 90%;
   font-size: 6em;
   z-index: 2;
+  width: fit-content;
+  border-style:none;
+  }
+
+.header2 {
+  font-family: CocoExtraBold;
+  color:white;
+  line-height: 90%;
+  font-size: 6em;
+  z-index: 2;
+  width: fit-content;
+  border-style:none;
   }
 
 p {
   font-family: CocoLight;
   color:white;
-  position: absolute;
-  top:123%;
-  left: 7%;
   line-height: 160%;
   font-size: 1.7em;
-width: 40%;
+width: 50%;
+z-index: 2;
 }
 
-h1.footer {
+.impressum {
   font-family: CocoExtraBold;
   color:white;
-  position: absolute;
-  top:200%;
-  left: 7%;
-  line-height: 90%;
+  
+  line-height: 70%;
   font-size: 2em;
 }
-h1.footer2 {
+.entdecken {
   font-family: CocoExtraBold;
   color:white;
-  position: absolute;
-  top:200%;
-  left: 15%;
-  line-height: 90%;
+  line-height: 70%;
+ 
   font-size: 2em;
 }
 
-p.footer {
+.imprText {
   font-family: CocoLight;
   color:white;
-  position: absolute;
-  top:205%;
-  left: 7%;
+
   line-height: 160%;
   font-size: 1em;
 }
 
 img.YT {
-  position: absolute;
-  top:210%;
-  left: 15%;
-  width: 10%;
+ z-index: 5;
+  width: 2%;
 }
 
 img.twitter {
-  position: absolute;
-  top:210%;
-  left: 15%;
-  width: 10%;
+  z-index: 5;
+  width: 2%;
 }
 
 img.insta {
-  position: absolute;
-  top:210%;
-  left: 15%;
-  width: 10%;
+  z-index: 5;
+  width: 2%;
 }
 
+footer {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding-top: 2%;
+  padding-bottom: 10%;
+  padding-left: 0%;
+  padding-right: 0%;
+  display: flex;
+  flex-direction: row;
+  gap: 2% 3%;
+  align-items: flex-end;
+  align-content: flex-end;
+  z-index: 3;
+  margin-top: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+  gap: 3%;
+  left: 5%;
+  z-index: 3;
+}
+
+div.pics{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 0px 1%;
+  z-index: 7;
+}
+
+.impContainer {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.entContainer {
+  display: flex;
+  flex-direction: column;
+ 
+}
 
 body {
-    background-image: url("../Website/Pictures/Front_Prototyp.png");
-    background-size:cover;                    /* <------ */
+    
+    background-size:cover;                   
     background-repeat: no-repeat;
     background-color: peru;
+    height: 4100px;
+    border: 0;
+    margin: 0;
    }
 
    .learn {
@@ -178,9 +388,10 @@ body {
     padding-right: 5%;
     padding-top: 0.8%;
     padding-bottom: 0.8%;
-    position: absolute;
-    top: 60%;
-    left: 7%;
+    z-index: 3;
+   }
+
+   .button {
     z-index: 2;
    }
 
@@ -190,49 +401,14 @@ body {
    }
    
    @media (max-width: 1500px) {
-
-  h1 {
-    font-size: 6em;
-    position: absolute;
-    top: 20%;
-    left: 7%;
-    z-index: 2;
-  }
-  h2 {
-    font-size: 1.8em;
-    position: absolute;
-    top:34%;
-    left: 7%;
-    z-index: 2;
-  }
-
-  .learn {
-    font-size: 1.7em;
-    position: absolute;
-    top: 53%;
-    left: 7%;
-    z-index: 2;
-  }
-
-  h3 {
-    font-size: 1.5em;
-    z-index: 2;
-  }
-
-  .acc {
-    position: absolute;
-    right: 1.7%;
-    top: 1.1%;
-    height: 20px;
-    z-index: 2;
-  }
-  p {
-    width: 40%;
-    overflow: 0;
-  }
+    #gradient {
+      height: 50em;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.664) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+  
 }
 
-@media (max-height: 900px) {
+/*@media (max-height: 900px) {
 
   h1 {
     font-size: 6em;
@@ -272,6 +448,14 @@ body {
   p {
     width: 40%;
    
+  }
+
+  #video {
+    content: url("../Website/Videos/Mobile.mp4");
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -4;
   }
 }
 
@@ -316,55 +500,157 @@ body {
     width: 40%;
    
   }
-}
+}*/
 @media (max-width: 1000px) {
-  h1 {
-    font-size: 6 em;
-    text-align: center;
+
+
+  a.acc {
+    width:25px;
+    height: 25px;
+    z-index: 4;
+    right: 3%;
+  }
+
+  .accImage {
+    width:25px;
+    height: 25px;
+  }
+
+  .fillObject{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 3%;
+  }
+
+  #gradient {
+    height: 60em;
+  }
+  .section {
+    align-items: center;
+  }
+
+  .frontPage{
+    align-items: center;
     position: relative;
     left: 0%;
-    margin-top: 80%;
-    margin-bottom: 1%;
+    margin-top: 55%;
+  }
+  .header1 {
+    text-align: center;
+    line-height: 100%;
+    font-size: 7.6em;
   }
   h2 {
-    font-size: 1.9em;
     text-align: center;
-    position:relative;
-    left: 0%;
-    margin-top: 0%;
-    
-    
+    margin-bottom: 10%;
+    margin-top: 2%;
+  }
+  
+  h3 {
+    font-size: 2em;
   }
   .learn {
-    font-size: 1.5em;
-    text-align: center;
-    position:relative;
-    top: 0%;
+    width: 7em;
+  }
+
+  div.subPage1 {
+    align-items: center;
+    position: relative;
     left: 0%;
-    margin-top: 11%;
+    margin: 0%;
+    margin-right: 0%;
+    margin-top: 13%;
+    width: 90%;
   }
 
-  .button {
+  div.subPage2 {
+    align-items: center;
+    position: relative;
+    left: 0%;
+    margin: 0%;
+    margin-right: 0%;
+    margin-top: 75%;
+    width: 90%;
+  }
+
+  div.subPage3 {
+    align-items: center;
+    position: relative;
+    left: 0%;
+    margin: 0%;
+    margin-right: 0%;
+    margin-top: 75%;
+    margin-bottom: 80%;
+    width: 90%;
+  }
+
+  .header2 {
+    margin-top: 15%;
+    align-items: center;
     text-align: center;
-  }
-
-  body {
-    background-image: url("../Website/Pictures/Mobile/Front_Prototyp_Mobile_Fade.png");
-  }
-  h3 {
-    font-size: 1.2em;
-  }
-
-  .acc {
-    position: absolute;
-    right: 1.1%;
-    top: 0.9%;
-    height: 18px;
+    line-height: 90%;
+    font-size: 5.5em;
   }
   p {
-    width: 40%;
-   
+    text-align: center;
+    width: 90%;
+    font-size: 1.4em;
   }
+
+  #video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0%;
+    z-index: -5;
+  }
+
+  #videoMobile {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 100%;
+  }
+
+  .footer {
+    
+    width: 70%;
+    gap: 7%;
+  }
+
+  footer {
+    gap:7%;
+  }
+  
+  img.twitter {
+    width: 6%;
+  }
+
+  img.YT {
+    width: 6%;
+  }
+
+  img.insta {
+    width: 6%;
+  }
+  
+  div.pics {
+    gap: 3%;
+  }
+
+  .specsContainer {
+   position: relative;
+   right:10%;
+    gap: 90%;
+    
+  }
+
 }
 
 @media (max-width: 550px) {
